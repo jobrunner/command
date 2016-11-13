@@ -123,7 +123,7 @@ class CommandLine
             while (list(,$line) = each($lines)) {
                 echo str_pad("", $this->_colWith0 + $this->_colWith1 + $this->_colWith2) . $line . "\n";
             }
-            echo "\n";
         }
+        echo "\n";
     }
 }
