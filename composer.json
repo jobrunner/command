@@ -1,19 +1,19 @@
 {
     "name": "jobrunner/command",
     "keywords": ["micromett"],
-    "description": "Simeple helpers for command line apps in PHP",
+    "description": "Realy simple but old helpers for command line apps in PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Job Runner",
+            "name": "Jo Brunner",
             "email": "jo.brunner@mayflower.de",
             "homepage": "http://www.mayflower.de/"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.4.0"
     },
     "autoload": {
         "psr-0": {"": ["lib/"]}
