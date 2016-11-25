@@ -54,7 +54,7 @@ class Configuration
         return array();
     }
 
-    protected function _callerScript()
+    public function callerScript()
     {
       $bt = debug_backtrace();
 
@@ -80,7 +80,7 @@ class Configuration
             }
         }
         $paths[] = rtrim(getenv("HOME"), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . '.' . trim($configName, '.');
-        $paths[] = rtrim(dirname($this->_callerScript()), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . rtrim($configName, '.') . '.ini';
+        $paths[] = rtrim(dirname($this->callerScript()), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . rtrim($configName, '.') . '.ini';
 
         foreach ($paths as $path) {
             if (is_readable($path)) {
